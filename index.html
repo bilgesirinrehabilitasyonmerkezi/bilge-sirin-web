@@ -1,646 +1,1869 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="t8JWjtZJ6WYeVFEsZlyXmkmSMFZp0n_FPIKvJEHwU5U" />
-<title>Bilge Şirin Özel Eğitim ve Rehabilitasyon Merkezi | Bayrampaşa</title>
-
-<meta name="description" content="Bilge Şirin Özel Eğitim ve Rehabilitasyon Merkezi - Bayrampaşa, İstanbul. Çocukların eğitim ve gelişim süreçleri hakkında bilgi alın.">
-<meta name="keywords" content="Bayrampaşa özel eğitim, rehabilitasyon merkezi, özel eğitim merkezi, çocuk gelişimi, Bayrampaşa rehabilitasyon">
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Bilge Şirin Özel Eğitim ve Rehabilitasyon Merkezi",
-  "url": "https://bilgesirinrehabilitasyonmerkezi.github.io/bilge-sirin-web/",
-  "telephone": "+905517284797",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Yıldırım Mahallesi, Kınalıada Sokak No:59",
-    "addressLocality": "Bayrampaşa",
-    "addressRegion": "İstanbul",
-    "addressCountry": "TR"
-  }
-}
-</script>
-
-<style>
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #243447;
-    background: #f7fafc;
-    line-height: 1.6;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.container {
-    width: min(1120px, 92%);
-    margin: auto;
-}
-
-/* HEADER */
-
-header {
-    background: white;
-    border-bottom: 1px solid #e8edf2;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.nav {
-    min-height: 76px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.logo {
-    font-size: 20px;
-    font-weight: 800;
-    color: #246b8f;
-}
-
-.logo span {
-    display: block;
-    font-size: 12px;
-    font-weight: 500;
-    color: #687785;
-    margin-top: 2px;
-}
-
-nav {
-    display: flex;
-    gap: 22px;
-    align-items: center;
-}
-
-nav a {
-    font-size: 14px;
-    color: #405261;
-}
-
-nav a:hover {
-    color: #246b8f;
-}
-
-/* HERO */
-
-.hero {
-    background: linear-gradient(135deg, #eaf7fb 0%, #f8fcfd 55%, #eef7f3 100%);
-    padding: 85px 0;
-}
-
-.hero-grid {
-    display: grid;
-    grid-template-columns: 1.15fr .85fr;
-    gap: 55px;
-    align-items: center;
-}
-
-.badge {
-    display: inline-block;
-    background: #dff1f5;
-    color: #246b8f;
-    padding: 8px 14px;
-    border-radius: 30px;
-    font-size: 13px;
-    font-weight: 700;
-    margin-bottom: 18px;
-}
-
-h1 {
-    font-size: clamp(36px, 5vw, 58px);
-    line-height: 1.08;
-    color: #183b4d;
-    margin-bottom: 22px;
-}
-
-.hero p {
-    font-size: 18px;
-    color: #5d6c78;
-    max-width: 650px;
-    margin-bottom: 30px;
-}
-
-.buttons {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-}
-
-.btn {
-    display: inline-block;
-    padding: 14px 22px;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 15px;
-    transition: .2s;
-}
-
-.btn-primary {
-    background: #246b8f;
-    color: white;
-}
-
-.btn-primary:hover {
-    background: #1d5875;
-}
-
-.btn-secondary {
-    background: white;
-    border: 1px solid #cbd8df;
-    color: #246b8f;
-}
-
-/* HERO CARD */
-
-.hero-card {
-    background: white;
-    padding: 32px;
-    border-radius: 24px;
-    box-shadow: 0 18px 50px rgba(34, 68, 85, .10);
-}
-
-.hero-card-icon {
-    width: 62px;
-    height: 62px;
-    border-radius: 18px;
-    background: #e5f4f7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.hero-card h2 {
-    color: #183b4d;
-    font-size: 23px;
-    margin-bottom: 12px;
-}
-
-.hero-card p {
-    font-size: 15px;
-    margin-bottom: 0;
-}
-
-/* SECTIONS */
-
-section {
-    padding: 80px 0;
-}
-
-.section-title {
-    text-align: center;
-    max-width: 720px;
-    margin: 0 auto 45px;
-}
-
-.section-title h2 {
-    font-size: 36px;
-    color: #183b4d;
-    margin-bottom: 12px;
-}
-
-.section-title p {
-    color: #687785;
-}
-
-/* CARDS */
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-}
-
-.card {
-    background: white;
-    border: 1px solid #e6edf1;
-    border-radius: 18px;
-    padding: 28px;
-    transition: transform .2s, box-shadow .2s;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 14px 35px rgba(35, 65, 80, .08);
-}
-
-.card-icon {
-    font-size: 30px;
-    margin-bottom: 16px;
-}
-
-.card h3 {
-    color: #244c61;
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
-.card p {
-    color: #687785;
-    font-size: 15px;
-}
-
-/* INFORMATION */
-
-.info {
-    background: #eef7f8;
-}
-
-.info-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-}
-
-.info-box {
-    background: white;
-    padding: 30px;
-    border-radius: 18px;
-}
-
-.info-box h3 {
-    color: #244c61;
-    margin-bottom: 14px;
-}
-
-.info-box p {
-    color: #65737d;
-}
-
-/* PARENT */
-
-.parent-box {
-    background: white;
-    border-radius: 24px;
-    padding: 45px;
-    border: 1px solid #e5edf1;
-    text-align: center;
-}
-
-.parent-box h2 {
-    color: #183b4d;
-    font-size: 32px;
-    margin-bottom: 15px;
-}
-
-.parent-box p {
-    max-width: 750px;
-    margin: 0 auto 25px;
-    color: #65737d;
-}
-
-/* CONTACT */
-
-.contact {
-    background: #183b4d;
-    color: white;
-}
-
-.contact .section-title h2 {
-    color: white;
-}
-
-.contact .section-title p {
-    color: #c8d6dd;
-}
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 22px;
-}
-
-.contact-card {
-    background: rgba(255,255,255,.08);
-    border: 1px solid rgba(255,255,255,.12);
-    padding: 28px;
-    border-radius: 18px;
-}
-
-.contact-card h3 {
-    margin-bottom: 10px;
-}
-
-.contact-card p {
-    color: #d5e0e5;
-}
-
-.contact-card a {
-    color: white;
-    font-weight: 700;
-}
-
-/* FOOTER */
-
-footer {
-    background: #102d3b;
-    color: #aebfc8;
-    padding: 28px 0;
-    text-align: center;
-    font-size: 13px;
-}
-
-footer strong {
-    color: white;
-}
-
-/* MOBILE */
-
-@media (max-width: 800px) {
-
-    nav {
-        display: none;
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="google-site-verification"
+        content="t8JWjtZJ6WYeVFEsZlyXmkmSMFZp0n_FPIKvJEHwU5U">
+
+  <title>Bilge Şirin Özel Eğitim ve Rehabilitasyon Merkezi | Bayrampaşa</title>
+
+  <meta name="description"
+        content="Bilge Şirin Özel Eğitim ve Rehabilitasyon Merkezi, Bayrampaşa İstanbul'da özel eğitim, dil ve konuşma, gelişimsel destek, otizm ve öğrenme güçlükleri alanlarında ailelere bilgi ve destek sunar.">
+
+  <meta name="keywords"
+        content="Bilge Şirin Özel Eğitim ve Rehabilitasyon Merkezi, Bayrampaşa özel eğitim, Bayrampaşa rehabilitasyon merkezi, özel eğitim, dil ve konuşma, otizm, öğrenme güçlüğü, gelişimsel destek, RAM">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical"
+        href="https://bilgesirinrehabilitasyonmerkezi.github.io/bilge-sirin-web/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:title"
+        content="Bilge Şirin Özel Eğitim ve Rehabilitasyon Merkezi | Bayrampaşa">
+  <meta property="og:description"
+        content="Bayrampaşa'da özel eğitim ve gelişim alanlarında ailelere yönelik bilgi ve destek.">
+  <meta property="og:url"
+        content="https://bilgesirinrehabilitasyonmerkezi.github.io/bilge-sirin-web/">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title"
+        content="Bilge Şirin Özel Eğitim ve Rehabilitasyon Merkezi">
+  <meta name="twitter:description"
+        content="Bayrampaşa / İstanbul">
+
+  <style>
+
+    :root {
+      --navy: #102a43;
+      --navy-dark: #071c2d;
+      --blue: #1769aa;
+      --teal: #168b8b;
+      --teal-light: #e8f7f6;
+      --cream: #f7f9fb;
+      --white: #ffffff;
+      --text: #243b53;
+      --muted: #627d98;
+      --border: #d9e2ec;
+      --shadow: 0 18px 50px rgba(16, 42, 67, .10);
+      --radius: 20px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(100% - 40px, var(--max));
+      margin-inline: auto;
+    }
+
+    .topbar {
+      background: var(--navy-dark);
+      color: #dceaf5;
+      font-size: 14px;
+    }
+
+    .topbar-inner {
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .topbar a {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(217,226,236,.8);
+    }
+
+    .nav {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 260px;
+    }
+
+    .brand-mark {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--teal), var(--blue));
+      color: white;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 21px;
+      box-shadow: 0 8px 20px rgba(23,105,170,.20);
+    }
+
+    .brand-text strong {
+      display: block;
+      color: var(--navy);
+      font-size: 17px;
+      line-height: 1.2;
+    }
+
+    .brand-text span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 3px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    nav a {
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 650;
+    }
+
+    nav a:hover {
+      color: var(--teal);
+    }
+
+    .nav-cta {
+      background: var(--teal);
+      color: white !important;
+      padding: 11px 17px;
+      border-radius: 10px;
     }
 
     .hero {
-        padding: 55px 0;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(22,139,139,.16), transparent 30%),
+        linear-gradient(135deg, #f3f9fc 0%, #ffffff 55%, #edf8f7 100%);
+      padding: 82px 0 70px;
+      overflow: hidden;
     }
 
     .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 60px;
+      align-items: center;
     }
 
-    .cards {
-        grid-template-columns: 1fr;
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--teal-light);
+      color: #087575;
+      border: 1px solid #ccebea;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 750;
+      margin-bottom: 22px;
     }
 
-    .info-grid,
-    .contact-grid {
-        grid-template-columns: 1fr;
+    h1 {
+      font-size: clamp(38px, 5vw, 64px);
+      line-height: 1.08;
+      letter-spacing: -1.8px;
+      color: var(--navy-dark);
+      margin-bottom: 24px;
+    }
+
+    .hero-lead {
+      font-size: 19px;
+      color: var(--muted);
+      max-width: 690px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 20px;
+      border-radius: 11px;
+      font-weight: 750;
+      transition: .2s ease;
+    }
+
+    .button-primary {
+      background: var(--teal);
+      color: white;
+      box-shadow: 0 10px 25px rgba(22,139,139,.20);
+    }
+
+    .button-primary:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-secondary {
+      background: white;
+      border: 1px solid var(--border);
+      color: var(--navy);
+    }
+
+    .hero-card {
+      position: relative;
+      min-height: 430px;
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background:
+        linear-gradient(180deg, rgba(7,28,45,.05), rgba(7,28,45,.70)),
+        url("https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=85")
+        center / cover;
+    }
+
+    .hero-card-content {
+      position: absolute;
+      left: 25px;
+      right: 25px;
+      bottom: 25px;
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(10px);
+      padding: 23px;
+      border-radius: 18px;
+    }
+
+    .hero-card-content strong {
+      display: block;
+      font-size: 20px;
+      color: var(--navy);
+      margin-bottom: 7px;
+    }
+
+    .hero-card-content p {
+      color: var(--muted);
+      font-size: 14px;
     }
 
     section {
-        padding: 60px 0;
+      padding: 88px 0;
     }
 
-    .parent-box {
-        padding: 30px 20px;
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 45px;
     }
 
-    .section-title h2 {
-        font-size: 30px;
+    .section-label {
+      color: var(--teal);
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      font-weight: 800;
+      font-size: 12px;
+      margin-bottom: 10px;
     }
-}
-</style>
+
+    h2 {
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.15;
+      color: var(--navy);
+      letter-spacing: -.8px;
+      margin-bottom: 14px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .intro {
+      background: #ffffff;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .intro-box {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 34px;
+    }
+
+    .intro-box h3 {
+      font-size: 23px;
+      color: var(--navy);
+      margin-bottom: 14px;
+    }
+
+    .intro-box p {
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .check-list {
+      list-style: none;
+      display: grid;
+      gap: 13px;
+      margin-top: 20px;
+    }
+
+    .check-list li {
+      display: flex;
+      gap: 10px;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .check {
+      color: var(--teal);
+      font-weight: 900;
+    }
+
+    .services {
+      background: #f7fafc;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 29px;
+      transition: .2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: var(--teal-light);
+      color: var(--teal);
+      display: grid;
+      place-items: center;
+      font-size: 22px;
+      margin-bottom: 19px;
+    }
+
+    .card h3 {
+      color: var(--navy);
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .card-link {
+      display: inline-block;
+      margin-top: 17px;
+      color: var(--teal);
+      font-weight: 750;
+      font-size: 14px;
+    }
+
+    .family {
+      background: white;
+    }
+
+    .family-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 45px;
+      align-items: start;
+    }
+
+    .family-highlight {
+      background: linear-gradient(145deg, var(--navy), #174c70);
+      color: white;
+      border-radius: 25px;
+      padding: 38px;
+      position: sticky;
+      top: 110px;
+    }
+
+    .family-highlight h3 {
+      font-size: 27px;
+      line-height: 1.25;
+      margin-bottom: 15px;
+    }
+
+    .family-highlight p {
+      color: #dceaf5;
+      font-size: 15px;
+    }
+
+    .family-list {
+      display: grid;
+      gap: 15px;
+    }
+
+    .family-item {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 18px;
+      padding: 21px;
+      border: 1px solid var(--border);
+      border-radius: 17px;
+    }
+
+    .family-number {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: var(--teal-light);
+      color: var(--teal);
+      display: grid;
+      place-items: center;
+      font-weight: 850;
+    }
+
+    .family-item h3 {
+      color: var(--navy);
+      margin-bottom: 5px;
+    }
+
+    .family-item p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .topics {
+      background: #f7fafc;
+    }
+
+    .topic-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .topic {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    .topic strong {
+      display: block;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+
+    .topic span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .process {
+      background: white;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .process-card {
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: white;
+    }
+
+    .process-step {
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 850;
+      margin-bottom: 10px;
+    }
+
+    .process-card h3 {
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .process-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .info-note {
+      margin-top: 25px;
+      background: #fff8e8;
+      border: 1px solid #f0dfb0;
+      padding: 17px 20px;
+      border-radius: 13px;
+      color: #6d571e;
+      font-size: 14px;
+    }
+
+    .articles {
+      background: #f7fafc;
+    }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .article {
+      overflow: hidden;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 19px;
+    }
+
+    .article-image {
+      height: 190px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .article-body {
+      padding: 25px;
+    }
+
+    .article-category {
+      color: var(--teal);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 850;
+    }
+
+    .article h3 {
+      color: var(--navy);
+      font-size: 20px;
+      line-height: 1.3;
+      margin: 8px 0 10px;
+    }
+
+    .article p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .faq {
+      background: white;
+    }
+
+    .faq-list {
+      max-width: 900px;
+      display: grid;
+      gap: 12px;
+    }
+
+    details {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 19px 21px;
+      background: white;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 750;
+      color: var(--navy);
+    }
+
+    details p {
+      color: var(--muted);
+      margin-top: 12px;
+      font-size: 14px;
+    }
+
+    .contact {
+      background:
+        linear-gradient(135deg, var(--navy-dark), var(--navy));
+      color: white;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .contact h2 {
+      color: white;
+    }
+
+    .contact-text {
+      color: #d7e6f2;
+      font-size: 17px;
+      margin-bottom: 28px;
+    }
+
+    .contact-items {
+      display: grid;
+      gap: 15px;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .contact-icon {
+      width: 40px;
+      height: 40px;
+      flex: 0 0 40px;
+      border-radius: 11px;
+      background: rgba(255,255,255,.10);
+      display: grid;
+      place-items: center;
+    }
+
+    .contact-item strong {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .contact-item span {
+      color: #c8d9e7;
+      font-size: 14px;
+    }
+
+    .contact-card {
+      background: white;
+      color: var(--text);
+      border-radius: 24px;
+      padding: 32px;
+    }
+
+    .contact-card h3 {
+      color: var(--navy);
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .contact-card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+    .contact-buttons {
+      display: grid;
+      gap: 10px;
+    }
+
+    .contact-buttons a {
+      text-align: center;
+    }
+
+    .whatsapp {
+      background: #25d366;
+      color: white;
+    }
+
+    footer {
+      background: #061824;
+      color: #aac0d0;
+      padding: 35px 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr .7fr .7fr;
+      gap: 40px;
+    }
+
+    footer strong {
+      color: white;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    footer p,
+    footer a {
+      font-size: 13px;
+      color: #aac0d0;
+    }
+
+    footer ul {
+      list-style: none;
+      display: grid;
+      gap: 7px;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,.08);
+      margin-top: 30px;
+      padding-top: 20px;
+      font-size: 12px;
+      color: #8198aa;
+    }
+
+    @media (max-width: 950px) {
+
+      nav ul {
+        display: none;
+      }
+
+      .hero-grid,
+      .intro-grid,
+      .family-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        min-height: 350px;
+      }
+
+      .family-highlight {
+        position: static;
+      }
+
+      .cards,
+      .process-grid,
+      .article-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .topic-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 620px) {
+
+      .container {
+        width: min(100% - 28px, var(--max));
+      }
+
+      .topbar-inner {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .topbar-inner span {
+        display: none;
+      }
+
+      .nav {
+        min-height: 70px;
+      }
+
+      .brand {
+        min-width: 0;
+      }
+
+      .brand-text strong {
+        font-size: 14px;
+      }
+
+      .brand-text span {
+        font-size: 10px;
+      }
+
+      .brand-mark {
+        width: 42px;
+        height: 42px;
+        font-size: 17px;
+      }
+
+      .hero {
+        padding: 55px 0 45px;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+
+      .hero-lead {
+        font-size: 16px;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .cards,
+      .process-grid,
+      .article-grid,
+      .topic-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .buttons {
+        display: grid;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .hero-card {
+        min-height: 300px;
+      }
+    }
+
+  </style>
+
+  <!-- LocalBusiness structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Bilge Şirin Özel Eğitim ve Rehabilitasyon Merkezi",
+    "url": "https://bilgesirinrehabilitasyonmerkezi.github.io/bilge-sirin-web/",
+    "telephone": "+905517284797",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Yıldırım Mahallesi, Kınalıada Sokak No:59",
+      "addressLocality": "Bayrampaşa",
+      "addressRegion": "İstanbul",
+      "addressCountry": "TR"
+    }
+  }
+  </script>
+
 </head>
 
 <body>
 
-<header>
-    <div class="container nav">
-        <a href="#" class="logo">
-            Bilge Şirin
-            <span>Özel Eğitim ve Rehabilitasyon Merkezi</span>
-        </a>
-
-        <nav>
-            <a href="#hizmetler">Hizmetler</a>
-            <a href="#aileler">Aileler İçin</a>
-            <a href="#iletisim">İletişim</a>
-        </nav>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Bayrampaşa / İstanbul</span>
+      <a href="tel:+905517284797">0551 728 47 97</a>
     </div>
-</header>
+  </div>
 
-<main>
+  <header>
+    <div class="container nav">
 
-<section class="hero">
-    <div class="container hero-grid">
+      <a href="#anasayfa" class="brand">
+        <div class="brand-mark">BŞ</div>
+
+        <div class="brand-text">
+          <strong>Bilge Şirin</strong>
+          <span>Özel Eğitim ve Rehabilitasyon Merkezi</span>
+        </div>
+      </a>
+
+      <nav aria-label="Ana menü">
+        <ul>
+          <li><a href="#kurumumuz">Kurumumuz</a></li>
+          <li><a href="#hizmetler">Branşlar</a></li>
+          <li><a href="#aileler">Aileler İçin</a></li>
+          <li><a href="#bilgi">Bilgi Merkezi</a></li>
+          <li><a href="#iletisim" class="nav-cta">İletişim</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="anasayfa">
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="container hero-grid">
 
         <div>
-            <div class="badge">Bayrampaşa / İstanbul</div>
 
-            <h1>
-                Her çocuğun gelişim yolculuğu kendine özeldir.
-            </h1>
+          <div class="eyebrow">
+            ● Bayrampaşa / İstanbul
+          </div>
 
-            <p>
-                Bilge Şirin Özel Eğitim ve Rehabilitasyon Merkezi olarak
-                çocukların eğitim ve gelişim süreçlerinde ihtiyaçlarına
-                uygun destek sunmayı amaçlıyoruz.
-            </p>
+          <h1>
+            Bilge Şirin Özel Eğitim ve Rehabilitasyon Merkezi
+          </h1>
 
-            <div class="buttons">
-                <a class="btn btn-primary" href="tel:+905517284797">
-                    Telefonla Bilgi Al
-                </a>
+          <p class="hero-lead">
+            Çocuğun gelişim yolculuğunda her bireyin ihtiyaçlarının
+            farklı olduğunu biliyoruz. Özel eğitim, iletişim ve dil
+            gelişimi, gelişimsel destek ve aile rehberliği alanlarında
+            bilgi ve destek sunuyoruz.
+          </p>
 
-                <a class="btn btn-secondary" href="#iletisim">
-                    İletişim Bilgileri
-                </a>
-            </div>
+          <div class="buttons">
+
+            <a class="button button-primary"
+               href="tel:+905517284797">
+              Bizi Arayın
+            </a>
+
+            <a class="button button-secondary"
+               href="https://wa.me/905517284797"
+               target="_blank"
+               rel="noopener">
+              WhatsApp'tan Bilgi Al
+            </a>
+
+          </div>
+
         </div>
 
         <div class="hero-card">
-            <div class="hero-card-icon">🌱</div>
 
-            <h2>
-                Önce çocuğu anlamak
-            </h2>
+          <div class="hero-card-content">
+
+            <strong>
+              Önce çocuğu anlamak.
+            </strong>
 
             <p>
-                Her çocuğun ihtiyaçları, güçlü yönleri ve öğrenme biçimi
-                farklıdır. Eğitim sürecinin çocuğa ve ailesine uygun
-                şekilde planlanması önemlidir.
+              Eğitim sürecinde bireysel ihtiyaçları,
+              gelişim özelliklerini ve aile ile iş birliğini
+              merkeze alan bir yaklaşım.
             </p>
+
+          </div>
+
         </div>
 
-    </div>
-</section>
+      </div>
+
+    </section>
 
 
-<section id="hizmetler">
-    <div class="container">
+    <!-- KURUM -->
+    <section class="intro" id="kurumumuz">
 
-        <div class="section-title">
-            <h2>Özel eğitim süreci</h2>
-            <p>
-                Çocukların bireysel ihtiyaçlarını ve gelişim süreçlerini
-                merkeze alan bir yaklaşım.
-            </p>
+      <div class="container intro-grid">
+
+        <div>
+
+          <div class="section-label">
+            Kurumumuz
+          </div>
+
+          <h2>
+            Bilge Şirin Özel Eğitim ve Rehabilitasyon Merkezi
+          </h2>
+
+          <p class="hero-lead">
+            Ailelerin çocuklarının gelişimiyle ilgili sorularına
+            anlaşılır ve güvenilir bilgiler ulaşabilmesini amaçlayan
+            kapsamlı bir eğitim ve bilgi platformu oluşturuyoruz.
+          </p>
+
+          <p>
+            Özel eğitim sürecinde çocuğun bireysel özelliklerinin,
+            güçlü yönlerinin ve ihtiyaçlarının birlikte
+            değerlendirilmesi önemlidir. Ailelerin süreç hakkında
+            doğru bilgiye sahip olması da eğitim sürecinin önemli
+            parçalarından biridir.
+          </p>
+
         </div>
+
+        <div class="intro-box">
+
+          <h3>
+            Aile ile iş birliği
+          </h3>
+
+          <p>
+            Eğitim sürecinin yalnızca kurumda gerçekleşen
+            çalışmalardan ibaret olmadığını düşünüyoruz.
+            Ailelerin süreci anlaması ve çocuğun günlük yaşamını
+            destekleyebilmesi önem taşır.
+          </p>
+
+          <ul class="check-list">
+
+            <li>
+              <span class="check">✓</span>
+              Bireysel ihtiyaçlara odaklanma
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Aile ile iletişim ve iş birliği
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Anlaşılır ve şeffaf bilgilendirme
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Gelişim sürecinin bütüncül değerlendirilmesi
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- HİZMETLER -->
+    <section class="services" id="hizmetler">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <div class="section-label">
+            Branşlar ve Hizmetler
+          </div>
+
+          <h2>
+            Özel eğitim ve gelişim alanları
+          </h2>
+
+          <p>
+            Aşağıdaki alanlar hakkında aileler için ayrıntılı
+            bilgilendirme içerikleri hazırlıyoruz. Her bireyin
+            eğitim ihtiyacı farklı olabilir; değerlendirme ve
+            eğitim süreci kişiye göre ele alınmalıdır.
+          </p>
+
+        </div>
+
 
         <div class="cards">
 
-            <div class="card">
-                <div class="card-icon">🧩</div>
-                <h3>Özel Eğitim</h3>
-                <p>
-                    Çocuğun bireysel ihtiyaçları doğrultusunda eğitim
-                    sürecinin desteklenmesine yönelik çalışmalar.
-                </p>
-            </div>
+          <article class="card">
 
-            <div class="card">
-                <div class="card-icon">💬</div>
-                <h3>İletişim ve Dil Gelişimi</h3>
-                <p>
-                    Dil ve iletişim gelişimi konusunda ailelerin
-                    doğru bilgiye ulaşmasına yardımcı olacak
-                    eğitim süreçleri.
-                </p>
-            </div>
+            <div class="icon">◈</div>
 
-            <div class="card">
-                <div class="card-icon">🌱</div>
-                <h3>Gelişimsel Destek</h3>
-                <p>
-                    Çocuğun gelişim özelliklerinin takip edilmesi
-                    ve eğitim sürecinin ihtiyaçlara göre
-                    desteklenmesi.
-                </p>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-<section class="info">
-    <div class="container">
-
-        <div class="section-title">
-            <h2>Aileler için önemli bilgiler</h2>
-            <p>
-                Özel eğitim süreci hakkında bilgi arayan aileler
-                için temel başlıklar.
-            </p>
-        </div>
-
-        <div class="info-grid">
-
-            <div class="info-box">
-                <h3>Çocuğum geç konuşuyor</h3>
-                <p>
-                    Konuşma ve dil gelişimiyle ilgili endişeleriniz
-                    varsa çocuğun gelişim özelliklerinin uzmanlar
-                    tarafından değerlendirilmesi önemlidir.
-                </p>
-            </div>
-
-            <div class="info-box">
-                <h3>Çocuğum öğrenmekte zorlanıyor</h3>
-                <p>
-                    Öğrenme sürecindeki güçlüklerin nedenlerinin
-                    değerlendirilmesi ve çocuğun ihtiyaçlarına uygun
-                    eğitim desteğinin belirlenmesi önem taşır.
-                </p>
-            </div>
-
-            <div class="info-box">
-                <h3>RAM süreci hakkında bilgi</h3>
-                <p>
-                    Özel eğitim sürecine ilişkin değerlendirme,
-                    yönlendirme ve gerekli belgeler konusunda
-                    güncel resmi bilgiler takip edilmelidir.
-                </p>
-            </div>
-
-            <div class="info-box">
-                <h3>İlk adım nedir?</h3>
-                <p>
-                    Çocuğunuzla ilgili bir gelişim veya eğitim
-                    endişeniz varsa öncelikle bilgi almak için
-                    merkezimizle iletişime geçebilirsiniz.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-
-<section id="aileler">
-    <div class="container">
-
-        <div class="parent-box">
-
-            <h2>Çocuğunuz için bilgi mi arıyorsunuz?</h2>
+            <h3>Özel Eğitim</h3>
 
             <p>
-                Özel eğitim ve rehabilitasyon süreciyle ilgili
-                sorularınızı bizimle iletişime geçerek
-                paylaşabilirsiniz.
+              Bireyin eğitim ihtiyaçlarına göre akademik,
+              sosyal, iletişim ve günlük yaşam becerilerini
+              desteklemeye yönelik özel eğitim hakkında bilgiler.
             </p>
 
-            <a class="btn btn-primary" href="tel:+905517284797">
-                0551 728 47 97
+            <a class="card-link" href="#bilgi">
+              Ayrıntılı bilgi →
             </a>
 
-        </div>
-
-    </div>
-</section>
+          </article>
 
 
-<section id="iletisim" class="contact">
+          <article class="card">
 
-    <div class="container">
+            <div class="icon">Aa</div>
 
-        <div class="section-title">
-            <h2>İletişim</h2>
+            <h3>Dil ve Konuşma</h3>
+
             <p>
-                Bilge Şirin Özel Eğitim ve Rehabilitasyon Merkezi
+              Dil gelişimi, konuşmanın anlaşılabilirliği,
+              iletişim becerileri ve konuşma alanındaki
+              güçlükler hakkında aile rehberleri.
             </p>
+
+            <a class="card-link" href="#bilgi">
+              Ayrıntılı bilgi →
+            </a>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="icon">✦</div>
+
+            <h3>Gelişimsel Destek</h3>
+
+            <p>
+              Çocukların gelişimsel özellikleri ve farklı
+              gelişim alanlarının desteklenmesi hakkında
+              bilgilendirici içerikler.
+            </p>
+
+            <a class="card-link" href="#bilgi">
+              Ayrıntılı bilgi →
+            </a>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="icon">∞</div>
+
+            <h3>Otizm Spektrum Bozukluğu</h3>
+
+            <p>
+              Otizm spektrum bozukluğu, iletişim, sosyal
+              etkileşim, günlük yaşam ve eğitim ihtiyaçları
+              hakkında ailelere yönelik bilgiler.
+            </p>
+
+            <a class="card-link" href="#bilgi">
+              Ayrıntılı bilgi →
+            </a>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="icon">▤</div>
+
+            <h3>Öğrenme Güçlükleri</h3>
+
+            <p>
+              Okuma, yazma ve matematik gibi akademik becerilerde
+              yaşanabilen güçlükler ve eğitim desteği hakkında
+              bilgilendirici içerikler.
+            </p>
+
+            <a class="card-link" href="#bilgi">
+              Ayrıntılı bilgi →
+            </a>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="icon">◎</div>
+
+            <h3>Dikkat ve Davranış</h3>
+
+            <p>
+              Dikkat, davranış, öğrenme ortamı ve günlük yaşam
+              becerileriyle ilgili ailelerin merak ettiği
+              konulara yönelik rehberler.
+            </p>
+
+            <a class="card-link" href="#bilgi">
+              Ayrıntılı bilgi →
+            </a>
+
+          </article>
+
         </div>
 
-        <div class="contact-grid">
+      </div>
 
-            <div class="contact-card">
-                <h3>📍 Adres</h3>
-                <p>
-                    Yıldırım Mahallesi<br>
-                    Kınalıada Sokak No:59<br>
-                    Bayrampaşa / İstanbul
-                </p>
-            </div>
+    </section>
 
-            <div class="contact-card">
-                <h3>📞 Telefon</h3>
-                <p>
-                    <a href="tel:+905517284797">
-                        0551 728 47 97
-                    </a>
-                </p>
-            </div>
+
+    <!-- AİLELER -->
+    <section class="family" id="aileler">
+
+      <div class="container family-grid">
+
+        <div class="family-highlight">
+
+          <div class="section-label" style="color:#7fe1dc;">
+            Aileler İçin
+          </div>
+
+          <h3>
+            “Çocuğumla ilgili bir sorun olduğunu düşünüyorum.
+            Nereden başlamalıyım?”
+          </h3>
+
+          <p>
+            Ailelerin bu süreçte en sık karşılaştığı soruları
+            anlaşılır biçimde cevaplayan kapsamlı bir rehber
+            bölümü oluşturuyoruz.
+          </p>
 
         </div>
 
-    </div>
 
-</section>
+        <div class="family-list">
 
-</main>
+          <article class="family-item">
+
+            <div class="family-number">01</div>
+
+            <div>
+
+              <h3>Çocuğum geç konuşuyor</h3>
+
+              <p>
+                Dil ve iletişim gelişimi hakkında ailelerin
+                dikkat edebileceği noktalar ve değerlendirme
+                süreci hakkında genel bilgiler.
+              </p>
+
+            </div>
+
+          </article>
 
 
-<footer>
+          <article class="family-item">
+
+            <div class="family-number">02</div>
+
+            <div>
+
+              <h3>Çocuğum öğrenmekte zorlanıyor</h3>
+
+              <p>
+                Okuma, yazma, matematik ve diğer akademik
+                becerilerde yaşanan güçlükler hakkında
+                bilgilendirici içerikler.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="family-item">
+
+            <div class="family-number">03</div>
+
+            <div>
+
+              <h3>RAM süreci hakkında bilgi</h3>
+
+              <p>
+                Rehberlik ve Araştırma Merkezleri, değerlendirme
+                ve özel eğitim süreci hakkında ailelere yönelik
+                açıklamalar.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="family-item">
+
+            <div class="family-number">04</div>
+
+            <div>
+
+              <h3>Hangi durumda destek alınmalı?</h3>
+
+              <p>
+                Gelişim, iletişim, öğrenme ve davranışla ilgili
+                ailelerin merak ettiği durumları açıklayan
+                rehber içerikler.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- BİLGİ KONULARI -->
+    <section class="topics" id="bilgi">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <div class="section-label">
+            Bilgi Merkezi
+          </div>
+
+          <h2>
+            Ailelerin merak ettiği konular
+          </h2>
+
+          <p>
+            Bilgi merkezinde özel eğitim ve gelişim alanlarıyla
+            ilgili kapsamlı makaleler, aile rehberleri ve sık
+            sorulan sorular yer alacak.
+          </p>
+
+        </div>
+
+
+        <div class="topic-grid">
+
+          <div class="topic">
+            <strong>Geç konuşma</strong>
+            <span>Çocuklarda dil ve iletişim gelişimi</span>
+          </div>
+
+          <div class="topic">
+            <strong>Otizm</strong>
+            <span>Otizm spektrum bozukluğu hakkında bilgiler</span>
+          </div>
+
+          <div class="topic">
+            <strong>Disleksi</strong>
+            <span>Öğrenme güçlüğü ve okuma becerileri</span>
+          </div>
+
+          <div class="topic">
+            <strong>Öğrenme güçlüğü</strong>
+            <span>Akademik beceriler ve eğitim desteği</span>
+          </div>
+
+          <div class="topic">
+            <strong>Dikkat</strong>
+            <span>Dikkat ve öğrenme süreçleri</span>
+          </div>
+
+          <div class="topic">
+            <strong>Davranış</strong>
+            <span>Ailelerin merak ettiği davranış konuları</span>
+          </div>
+
+          <div class="topic">
+            <strong>RAM</strong>
+            <span>Değerlendirme ve özel eğitim süreci</span>
+          </div>
+
+          <div class="topic">
+            <strong>Özel eğitim</strong>
+            <span>Özel eğitim hakkında temel bilgiler</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- RAM -->
+    <section class="process">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <div class="section-label">
+            Aile Rehberi
+          </div>
+
+          <h2>
+            RAM ve özel eğitim süreci
+          </h2>
+
+          <p>
+            Özel eğitim sürecinde ailelerin karşılaşabileceği
+            değerlendirme ve yönlendirme aşamalarını anlaşılır
+            şekilde açıklayan bir rehber hazırlıyoruz.
+          </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+          <article class="process-card">
+
+            <div class="process-step">
+              ADIM 01
+            </div>
+
+            <h3>
+              Başvuru ve değerlendirme
+            </h3>
+
+            <p>
+              Çocuğun eğitim ihtiyaçlarının belirlenmesi ve
+              değerlendirme sürecine ilişkin temel bilgiler.
+            </p>
+
+          </article>
+
+
+          <article class="process-card">
+
+            <div class="process-step">
+              ADIM 02
+            </div>
+
+            <h3>
+              Eğitim ihtiyacının belirlenmesi
+            </h3>
+
+            <p>
+              Değerlendirme sonucunda özel eğitim ihtiyacının
+              belirlenmesi ve ilgili süreçler hakkında genel
+              bilgilendirme.
+            </p>
+
+          </article>
+
+
+          <article class="process-card">
+
+            <div class="process-step">
+              ADIM 03
+            </div>
+
+            <h3>
+              Eğitim süreci
+            </h3>
+
+            <p>
+              Uygun eğitim programının planlanması, aile ile
+              iletişim ve gelişimin izlenmesi hakkında bilgiler.
+            </p>
+
+          </article>
+
+        </div>
+
+
+        <div class="info-note">
+          <strong>Önemli:</strong>
+          RAM ve özel eğitim süreçleri mevzuat ve uygulamalara
+          göre değişebilir. Güncel resmi bilgiler için ilgili
+          Rehberlik ve Araştırma Merkezi ve Millî Eğitim Bakanlığı
+          kaynakları esas alınmalıdır.
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- MAKALELER -->
+    <section class="articles">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <div class="section-label">
+            Makaleler
+          </div>
+
+          <h2>
+            Bilgi Merkezi'nden
+          </h2>
+
+          <p>
+            Ailelerin Google'da aradığı gerçek sorulara cevap
+            veren kapsamlı içerikler bu bölümde yayınlanacak.
+          </p>
+
+        </div>
+
+
+        <div class="article-grid">
+
+          <article class="article">
+
+            <div class="article-image"
+                 style="background-image:url('https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=900&q=80');">
+            </div>
+
+            <div class="article-body">
+
+              <div class="article-category">
+                Dil ve Konuşma
+              </div>
+
+              <h3>
+                Çocuğum geç konuşuyor: Ne zaman değerlendirme alınmalı?
+              </h3>
+
+              <p>
+                Dil gelişimiyle ilgili ailelerin en sık merak ettiği
+                konulara genel bir bakış.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="article">
+
+            <div class="article-image"
+                 style="background-image:url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80');">
+            </div>
+
+            <div class="article-body">
+
+              <div class="article-category">
+                Öğrenme
+              </div>
+
+              <h3>
+                Çocuğum okumayı öğrenmekte zorlanıyor
+              </h3>
+
+              <p>
+                Okuma ve öğrenme güçlükleri hakkında ailelerin
+                bilmesi gereken temel noktalar.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="article">
+
+            <div class="article-image"
+                 style="background-image:url('https://images.unsplash.com/photo-1492681290082-e932832941e6?auto=format&fit=crop&w=900&q=80');">
+            </div>
+
+            <div class="article-body">
+
+              <div class="article-category">
+                Aile Rehberi
+              </div>
+
+              <h3>
+                RAM nedir ve özel eğitim sürecinde nasıl bir rolü vardır?
+              </h3>
+
+              <p>
+                RAM sürecini anlamak isteyen aileler için
+                temel bilgiler.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="faq">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <div class="section-label">
+            Sık Sorulan Sorular
+          </div>
+
+          <h2>
+            Ailelerin sık sorduğu sorular
+          </h2>
+
+        </div>
+
+
+        <div class="faq-list">
+
+          <details>
+            <summary>
+              Özel eğitim nedir?
+            </summary>
+
+            <p>
+              Özel eğitim, bireysel eğitim ihtiyaçları ve
+              özellikleri doğrultusunda planlanan eğitim
+              çalışmalarını ifade eder. Eğitim süreci bireyin
+              ihtiyaçlarına göre değerlendirilir.
+            </p>
+          </details>
+
+
+          <details>
+            <summary>
+              RAM nedir?
+            </summary>
+
+            <p>
+              RAM, Rehberlik ve Araştırma Merkezi ifadesinin
+              kısaltmasıdır. Özel eğitim ihtiyacı bulunan
+              bireylerin değerlendirilmesi ve eğitim sürecine
+              ilişkin işlemlerde rol alan Millî Eğitim Bakanlığı
+              kurumlarından biridir.
+            </p>
+          </details>
+
+
+          <details>
+            <summary>
+              Çocuğum geç konuşuyorsa ne yapmalıyım?
+            </summary>
+
+            <p>
+              Her çocuğun gelişimi farklıdır. Konuşma ve dil
+              gelişimiyle ilgili endişeniz varsa bir uzmandan
+              değerlendirme hakkında bilgi almak uygun bir
+              başlangıç olabilir.
+            </p>
+          </details>
+
+
+          <details>
+            <summary>
+              Özel eğitim desteği hangi durumlarda gündeme gelebilir?
+            </summary>
+
+            <p>
+              Özel eğitim desteği; bireyin gelişimsel,
+              iletişimsel, akademik, sosyal veya günlük yaşam
+              becerileriyle ilgili eğitim ihtiyaçlarına göre
+              değerlendirilir. Uygun eğitim alanı bireysel
+              değerlendirme sonucuna göre belirlenir.
+            </p>
+          </details>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- İLETİŞİM -->
+    <section class="contact" id="iletisim">
+
+      <div class="container contact-grid">
+
+        <div>
+
+          <div class="section-label" style="color:#7fe1dc;">
+            İletişim
+          </div>
+
+          <h2>
+            Bilge Şirin Özel Eğitim ve Rehabilitasyon Merkezi
+          </h2>
+
+          <p class="contact-text">
+            Özel eğitim ve gelişim süreçleri hakkında bilgi almak
+            için kurumumuzla iletişime geçebilirsiniz.
+          </p>
+
+
+          <div class="contact-items">
+
+            <div class="contact-item">
+
+              <div class="contact-icon">⌖</div>
+
+              <div>
+                <strong>Adres</strong>
+                <span>
+                  Yıldırım Mahallesi, Kınalıada Sokak No:59,
+                  Bayrampaşa / İstanbul
+                </span>
+              </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <div class="contact-icon">☎</div>
+
+              <div>
+                <strong>Telefon</strong>
+                <span>0551 728 47 97</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <h3>
+            Bilgi almak ister misiniz?
+          </h3>
+
+          <p>
+            Telefonla veya WhatsApp üzerinden kurumumuza
+            ulaşabilirsiniz.
+          </p>
+
+          <div class="contact-buttons">
+
+            <a class="button button-primary"
+               href="tel:+905517284797">
+              0551 728 47 97
+            </a>
+
+            <a class="button whatsapp"
+               href="https://wa.me/905517284797"
+               target="_blank"
+               rel="noopener">
+              WhatsApp'tan Yazın
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
     <div class="container">
-        <strong>Bilge Şirin Özel Eğitim ve Rehabilitasyon Merkezi</strong>
-        <br>
-        Bayrampaşa / İstanbul
+
+      <div class="footer-grid">
+
+        <div>
+
+          <strong>
+            Bilge Şirin Özel Eğitim ve Rehabilitasyon Merkezi
+          </strong>
+
+          <p>
+            Bayrampaşa / İstanbul
+          </p>
+
+          <p>
+            Özel eğitim ve gelişim alanlarında ailelere yönelik
+            bilgilendirici içerikler.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <strong>
+            Hızlı Menü
+          </strong>
+
+          <ul>
+            <li><a href="#kurumumuz">Kurumumuz</a></li>
+            <li><a href="#hizmetler">Branşlar</a></li>
+            <li><a href="#aileler">Aileler İçin</a></li>
+            <li><a href="#bilgi">Bilgi Merkezi</a></li>
+          </ul>
+
+        </div>
+
+
+        <div>
+
+          <strong>
+            İletişim
+          </strong>
+
+          <ul>
+            <li>
+              <a href="tel:+905517284797">
+                0551 728 47 97
+              </a>
+            </li>
+
+            <li>
+              Yıldırım Mahallesi
+            </li>
+
+            <li>
+              Kınalıada Sokak No:59
+            </li>
+
+            <li>
+              Bayrampaşa / İstanbul
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <div class="copyright">
+        © 2026 Bilge Şirin Özel Eğitim ve Rehabilitasyon Merkezi.
+        Tüm hakları saklıdır.
+      </div>
+
     </div>
-</footer>
+
+  </footer>
+
 
 </body>
 </html>
