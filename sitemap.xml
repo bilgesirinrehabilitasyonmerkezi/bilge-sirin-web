@@ -1,6 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://bilgesirinrehabilitasyonmerkezi.github.io/bilge-sirin-web/</loc>
   </url>
+
+  <url>
+    <loc>https://bilgesirinrehabilitasyonmerkezi.github.io/bilge-sirin-web/dil-ve-konusma.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bilgesirinrehabilitasyonmerkezi.github.io/bilge-sirin-web/otizm.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bilgesirinrehabilitasyonmerkezi.github.io/bilge-sirin-web/ogrenme-guclukleri.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bilgesirinrehabilitasyonmerkezi.github.io/bilge-sirin-web/dikkat-ve-davranis.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bilgesirinrehabilitasyonmerkezi.github.io/bilge-sirin-web/gelisimsel-destek.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bilgesirinrehabilitasyonmerkezi.github.io/bilge-sirin-web/zihinsel-yetersizlik.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bilgesirinrehabilitasyonmerkezi.github.io/bilge-sirin-web/bedensel-yetersizlik.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bilgesirinrehabilitasyonmerkezi.github.io/bilge-sirin-web/isitme-yetersizligi.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bilgesirinrehabilitasyonmerkezi.github.io/bilge-sirin-web/gorme-yetersizligi.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bilgesirinrehabilitasyonmerkezi.github.io/bilge-sirin-web/ram-sureci.html</loc>
+  </url>
+
 </urlset>
