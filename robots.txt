@@ -1,0 +1,4 @@
+﻿User-agent: *
+Allow: /
+
+Sitemap: https://bilgesirinrehabilitasyonmerkezi.github.io/bilge-sirin-web/sitemap.xml
